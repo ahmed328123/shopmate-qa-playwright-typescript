@@ -4,7 +4,7 @@
   "description": "A complete QA portfolio project: demo e-commerce website with manual testing docs and Playwright TypeScript automation.",
   "scripts": {
     "start": "npx http-server app -p 3000 -c-1",
-    "test": "npx playwright test --headed",
+    "test": "npx playwright test ",
     "test:headed": "npx playwright test --headed",
     "test:ui": "npx playwright test --ui",
     "report": "npx playwright show-report",
