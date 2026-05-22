@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | ShopMate</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="ShopMate home">ShopMate</a>
+    <nav aria-label="Main navigation">
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span data-testid="cart-count">0</span></a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>Checkout</h1>
+    <form data-testid="checkout-form" class="form" novalidate>
+      <label for="fullName">Full name</label>
+      <input id="fullName" name="fullName" data-testid="checkout-name" placeholder="Ahmed Ali" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" data-testid="checkout-email" placeholder="name@example.com" />
+
+      <label for="address">Address</label>
+      <input id="address" name="address" data-testid="checkout-address" placeholder="Street and house number" />
+
+      <label for="city">City</label>
+      <input id="city" name="city" data-testid="checkout-city" placeholder="Duisburg" />
+
+      <button class="button primary" type="submit" data-testid="place-order">Place order</button>
+    </form>
+
+    <p data-testid="checkout-error" class="error hidden"></p>
+    <p data-testid="checkout-success" class="success hidden">Order placed successfully.</p>
+  </main>
+
+  <footer>
+    <p>© 2026 ShopMate QA Demo</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

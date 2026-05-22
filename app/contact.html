@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | ShopMate</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="ShopMate home">ShopMate</a>
+    <nav aria-label="Main navigation">
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span data-testid="cart-count">0</span></a>
+      <a href="login.html">Login</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page narrow">
+    <h1>Contact support</h1>
+    <form data-testid="contact-form" class="form" novalidate>
+      <label for="contactName">Name</label>
+      <input id="contactName" data-testid="contact-name" placeholder="Your name" />
+
+      <label for="contactEmail">Email</label>
+      <input id="contactEmail" data-testid="contact-email" placeholder="name@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" data-testid="contact-message" placeholder="How can we help?"></textarea>
+
+      <button class="button primary" type="submit" data-testid="contact-submit">Send message</button>
+    </form>
+
+    <p data-testid="contact-error" class="error hidden"></p>
+    <p data-testid="contact-success" class="success hidden">Your message has been sent.</p>
+  </main>
+
+  <footer>
+    <p>© 2026 ShopMate QA Demo</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

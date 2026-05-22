@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | ShopMate</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="ShopMate home">ShopMate</a>
+    <nav aria-label="Main navigation">
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span data-testid="cart-count">0</span></a>
+      <a href="login.html" aria-current="page">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page narrow">
+    <h1>Login</h1>
+    <form data-testid="login-form" class="form" novalidate>
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" data-testid="login-email" placeholder="user@example.com" />
+
+      <label for="loginPassword">Password</label>
+      <input id="loginPassword" data-testid="login-password" type="password" placeholder="Password" />
+
+      <button class="button primary" type="submit" data-testid="login-submit">Login</button>
+    </form>
+
+    <p data-testid="login-message" class="error hidden"></p>
+  </main>
+
+  <footer>
+    <p>© 2026 ShopMate QA Demo</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

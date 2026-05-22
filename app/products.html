@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | ShopMate</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="ShopMate home">ShopMate</a>
+    <nav aria-label="Main navigation">
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="cart.html">Cart <span data-testid="cart-count">0</span></a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>Products</h1>
+    <p class="muted">Search and add products to your cart.</p>
+
+    <section class="toolbar" aria-label="Product filters">
+      <label for="search">Search products</label>
+      <input id="search" data-testid="product-search" type="search" placeholder="Search by product name" />
+      <label for="category">Category</label>
+      <select id="category" data-testid="category-filter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="fitness">Fitness</option>
+        <option value="office">Office</option>
+      </select>
+    </section>
+
+    <section class="product-grid" data-testid="product-grid" aria-label="Product list">
+      <article class="product-card" data-testid="product-card" data-name="Wireless Mouse" data-category="electronics" data-price="24.99">
+        <div class="product-icon">🖱️</div>
+        <h2>Wireless Mouse</h2>
+        <p>Ergonomic wireless mouse for everyday work.</p>
+        <strong>€24.99</strong>
+        <button data-testid="add-to-cart" data-product="Wireless Mouse" data-price="24.99">Add to cart</button>
+      </article>
+
+      <article class="product-card" data-testid="product-card" data-name="Yoga Mat" data-category="fitness" data-price="19.99">
+        <div class="product-icon">🧘</div>
+        <h2>Yoga Mat</h2>
+        <p>Comfortable non-slip mat for home training.</p>
+        <strong>€19.99</strong>
+        <button data-testid="add-to-cart" data-product="Yoga Mat" data-price="19.99">Add to cart</button>
+      </article>
+
+      <article class="product-card" data-testid="product-card" data-name="Desk Lamp" data-category="office" data-price="34.50">
+        <div class="product-icon">💡</div>
+        <h2>Desk Lamp</h2>
+        <p>LED desk lamp with three brightness modes.</p>
+        <strong>€34.50</strong>
+        <button data-testid="add-to-cart" data-product="Desk Lamp" data-price="34.50">Add to cart</button>
+      </article>
+
+      <article class="product-card" data-testid="product-card" data-name="Bluetooth Speaker" data-category="electronics" data-price="49.99">
+        <div class="product-icon">🔊</div>
+        <h2>Bluetooth Speaker</h2>
+        <p>Portable speaker with clear sound.</p>
+        <strong>€49.99</strong>
+        <button data-testid="add-to-cart" data-product="Bluetooth Speaker" data-price="49.99">Add to cart</button>
+      </article>
+    </section>
+
+    <p data-testid="no-results" class="hidden">No products found.</p>
+  </main>
+
+  <footer>
+    <p>© 2026 ShopMate QA Demo</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

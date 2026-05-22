@@ -1,0 +1,28 @@
+{
+  "name": "shopmate-qa-project",
+  "version": "1.0.0",
+  "description": "A complete QA portfolio project: demo e-commerce website with manual testing docs and Playwright TypeScript automation.",
+  "scripts": {
+    "start": "npx http-server app -p 3000 -c-1",
+    "test": "npx playwright test --headed",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report",
+    "install:browsers": "npx playwright install"
+  },
+  "keywords": [
+    "qa",
+    "playwright",
+    "typescript",
+    "test-automation",
+    "manual-testing",
+    "e2e-testing"
+  ],
+  "author": "Ahmed Ali",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "http-server": "^14.1.1",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | ShopMate</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="ShopMate home">ShopMate</a>
+    <nav aria-label="Main navigation">
+      <a href="products.html">Products</a>
+      <a href="cart.html" aria-current="page">Cart <span data-testid="cart-count">0</span></a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>Your cart</h1>
+    <section data-testid="cart-items" class="cart-items" aria-label="Cart items"></section>
+    <p data-testid="empty-cart" class="muted">Your cart is empty.</p>
+
+    <div class="summary">
+      <p>Subtotal: <strong data-testid="cart-subtotal">€0.00</strong></p>
+      <p>Shipping: <strong data-testid="cart-shipping">€4.99</strong></p>
+      <p>Total: <strong data-testid="cart-total">€0.00</strong></p>
+    </div>
+
+    <a class="button primary" href="checkout.html" data-testid="checkout-link">Proceed to checkout</a>
+  </main>
+
+  <footer>
+    <p>© 2026 ShopMate QA Demo</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

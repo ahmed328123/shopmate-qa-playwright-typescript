@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopMate | QA Demo Store</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="ShopMate home">ShopMate</a>
+    <nav aria-label="Main navigation">
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span data-testid="cart-count">0</span></a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">QA Portfolio Demo</p>
+        <h1>Modern shopping experience built for testing.</h1>
+        <p>ShopMate is a small e-commerce demo app created for manual testing, bug reporting, and Playwright automation with TypeScript.</p>
+        <a class="button primary" href="products.html">Start shopping</a>
+        <a class="button secondary" href="contact.html">Contact support</a>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Store features">
+      <article>
+        <h2>Fast checkout</h2>
+        <p>Practice checkout validation, price calculation, and form testing.</p>
+      </article>
+      <article>
+        <h2>Product search</h2>
+        <p>Test search, filters, product cards, and edge cases.</p>
+      </article>
+      <article>
+        <h2>Responsive UI</h2>
+        <p>Validate layout behavior on desktop and mobile viewports.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 ShopMate QA Demo</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
