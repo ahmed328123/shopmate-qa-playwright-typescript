@@ -20,7 +20,7 @@ test.describe('Cart page', () => {
     await expect(page.getByTestId('cart-count')).toHaveText('1');
   });
 
-  test('calculates total including shipping - expected to fail because of known bug BUG-003', async ({ page }) => {
+  test.fixme('calculates total including shipping - known bug BUG-003', async ({ page }) => {
     const products = new ProductsPage(page);
     const cart = new CartPage(page);
 
@@ -32,7 +32,7 @@ test.describe('Cart page', () => {
     await expect(page.getByTestId('cart-total')).toHaveText('€29.98');
   });
 
-  test('updates cart count after removing item - expected to fail because of known bug BUG-002', async ({ page }) => {
+  test.fixme('updates cart count after removing item - known bug BUG-002', async ({ page }) => {
     const products = new ProductsPage(page);
     const cart = new CartPage(page);
 

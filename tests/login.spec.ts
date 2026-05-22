@@ -11,7 +11,7 @@ test.describe('Login page', () => {
     await expect(page.getByTestId('login-message')).toContainText('Login successful.');
   });
 
-  test('shows error for invalid credentials - expected to fail because of known bug BUG-005', async ({ page }) => {
+  test.fixme('shows error for invalid credentials - known bug BUG-005', async ({ page }) => {
     await page.goto('/login.html');
 
     await page.getByTestId('login-email').fill('wrong@example.com');

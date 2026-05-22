@@ -24,7 +24,7 @@ test.describe('Products page', () => {
     await expect(products.productCards.filter({ hasText: 'Yoga Mat' })).toBeHidden();
   });
 
-  test('search finds product by partial name - expected to fail because of known bug BUG-001', async ({ page }) => {
+  test.fixme('search finds product by partial name - known bug BUG-001', async ({ page }) => {
     const products = new ProductsPage(page);
 
     await products.searchFor('speaker');

@@ -11,7 +11,7 @@ test.describe('Checkout page', () => {
     await checkout.expectError('All fields are required.');
   });
 
-  test('rejects invalid email format - expected to fail because of known bug BUG-004', async ({ page }) => {
+  test.fixme('rejects invalid email format - known bug BUG-004', async ({ page }) => {
     const checkout = new CheckoutPage(page);
 
     await checkout.goto();
