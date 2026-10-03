@@ -83,12 +83,4 @@ This application intentionally contains several bugs to demonstrate QA skills:
 
 Some automated tests are intentionally written to fail because they validate expected business behavior and reveal these known bugs.
 
-## CV Description
 
-**ShopMate QA Project**  
-Manual Testing and Playwright Test Automation with TypeScript
-
-- Created a demo e-commerce web application for structured QA testing.
-- Designed requirements, manual test cases, bug reports, and Jira-style documentation.
-- Automated end-to-end tests with Playwright, TypeScript, and Page Object Model.
-- Covered product search, cart, checkout validation, login, contact form, and responsive UI.
